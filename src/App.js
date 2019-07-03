@@ -9,7 +9,7 @@ const App = () => {
         <section>
             <h1>Get the freedom you deserve.</h1>
         </section>
-        <section>
+        <section className={styles.Section}>
             <h1>Choose your plan</h1>
         </section>
       </main>
