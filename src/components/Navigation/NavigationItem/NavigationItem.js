@@ -9,7 +9,10 @@ const NavigationItem = props => {
             <NavLink
                 to={props.link}
                 exact={props.exact}
-                activeClassName={styles.active}
+                activeClassName={styles.NavigationItem__link_active}
+                className={props.cta ? 
+                    `${styles.NavigationItem__link} ${styles.NavigationItem__link_cta}`  
+                    : styles.NavigationItem__link}
             >
                 {props.children}
             </NavLink>

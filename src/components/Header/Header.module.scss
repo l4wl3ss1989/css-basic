@@ -1,0 +1,13 @@
+@import '../../sass/vars.scss';
+
+.Header {
+    width: 100%;
+    background: $color-theme;
+    padding: 8px 16px;
+    .Header__Navigation {
+        display: inline-block;
+        width: calc(100% - 74px);
+        text-align: right;
+        vertical-align: middle;
+    }
+}

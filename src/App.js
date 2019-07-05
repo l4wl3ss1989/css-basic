@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import styles from './App.module.scss';
-import Header from './components/Header/Header';
+import Layout from './hoc/Layout/Layout';
+import './App.module.scss';
+import Home from './containers/Home/Home';
+import Customers from './containers/Customers/Customers';
+import Packages from './containers/Packages/Packages';
+import StartHosting from './containers/StartHosting/StartHosting';
 
-const App = () => {
-  return (
-    <div className={styles.App}>
-      <Header />
-      <main>
-        <section id={styles.Product__Overview}>
-            <h1>Get the freedom you deserve.</h1>
-        </section>
-        <h1>Work some motivation required ...</h1>
-        <p>Work some motivation required ...</p>
-      </main>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Layout>
+          <Switch> 
+            <Route path="/packages" exact component={Packages} />
+            <Route path="/customers" component={Customers} />
+            <Route path="/start-hosting" exact component={StartHosting} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

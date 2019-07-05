@@ -1,0 +1,11 @@
+@import '../../../sass/vars.scss';
+
+.Plan {
+    background-color: $color-theme-ligth;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
