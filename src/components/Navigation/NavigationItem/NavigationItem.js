@@ -1,9 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import styles from './NavigationItem.module.scss';
+import stylesHeader from './HeaderNavigationItem.module.scss';
+import stylesFooter from './FooterNavigationItem.module.scss';
 
 const NavigationItem = props => {
+    const styles = props.classRef === 'header' ? stylesHeader : stylesFooter;
     return (
         <li className={styles.NavigationItem}>
             <NavLink

@@ -8,12 +8,23 @@
     h1 {                
         font-family: 'antonregular', 'sans-serif';
         color: white;
-    }   
+    } 
 }
 
 .Plans {
-    .Plans__sectionTitle {
+    .Plans__SectionTitle {
         text-align: center;
         color: $color-theme;
+    }
+}
+
+.KeyFeatures {
+    background: $color-red;
+    margin-top: 80px;
+    padding: 16px;
+    .KeyFeatures__SectionTitle {
+        text-align: center;
+        margin: 32px;       
+        color: white;
     }
 }

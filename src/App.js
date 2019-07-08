@@ -17,6 +17,8 @@ class App extends Component {
             <Route path="/packages" exact component={Packages} />
             <Route path="/customers" component={Customers} />
             <Route path="/start-hosting" exact component={StartHosting} />
+            <Route path="/support" exact component={Home} />
+            <Route path="/terms-of-use" exact component={Home} />
             <Route path="/" component={Home} />
           </Switch>
         </Layout>

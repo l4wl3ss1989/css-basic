@@ -13,6 +13,7 @@ const Plans = props => {
                     price={plan.price}
                     desc={plan.desc}
                     assets={plan.assets}
+                    featured={plan.featured ? true : false}
                 />
             ))}            
         </div>

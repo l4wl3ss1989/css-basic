@@ -1,0 +1,19 @@
+@import '../../../sass/vars.scss';
+
+.Button {
+    background: $color-theme-dark;
+    color: white;
+    font: inherit;
+    border: 1.5px solid $color-theme-dark;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover, &:active {
+        background-color: white;
+        color: $color-theme-dark;
+    }
+    &:focus {
+        outline: none;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../../sass/vars.scss';
+
+@mixin active-item {
+    color: #ccc;
+}
+
+.NavigationItem {
+    display: inline-block;
+    margin: 0 16px;
+    .NavigationItem__link {
+        text-decoration: none;
+        color: white;
+        &:hover, &:active {
+            @include active-item;
+        }      
+    }
+
+    .NavigationItem__link.NavigationItem__link_active  {
+        @include active-item;
+    }
+}
