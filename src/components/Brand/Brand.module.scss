@@ -4,9 +4,14 @@
     display: inline-block;
     vertical-align: middle;
     a {
+        display: inline-block;
         color: $color-theme-dark;
         text-decoration: none;
         font-weight: bold;
         font-size: 22px;
+        height: 22px;
+        img {
+            height: 100%;
+        }
     }
 }

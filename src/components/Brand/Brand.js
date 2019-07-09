@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Logo from '../../assets/images/uhost-icon.png';
 import styles from './Brand.module.scss';
 
 const Brand = props => {
@@ -11,7 +12,7 @@ const Brand = props => {
                 exact
                 activeClassName="active"
             >
-                uHost
+                <img src={Logo} alt="uHost"/>
             </NavLink>
         </div>
         

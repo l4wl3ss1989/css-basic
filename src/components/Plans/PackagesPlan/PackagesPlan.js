@@ -26,6 +26,9 @@ const PackagesPlan = props => {
         <section className={cssStyles}>
             <Link to={`/plan?name=${props.name}`}>
                 <h1 className={styles.PackagesPlan__title}>{`Our ${props.name} Plan`}</h1>
+                {props.featured ? 
+                    <h2 className={styles.PackagesPlan__badge}>RECOMENDED</h2>
+                : null}
                 <h2 className={styles.PackagesPlan__subtitle}>{props.title}</h2>
                 <p className={styles.PackagesPlan__info}>{props.desc}</p>
             </Link>

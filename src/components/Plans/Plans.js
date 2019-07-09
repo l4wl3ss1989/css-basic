@@ -4,7 +4,7 @@ import styles from './Plans.module.scss';
 import { RETRIVE_PLANS } from '../../config/plans';
 import Plan from './Plan/Plan';
 
-const Plans = props => {
+const Plans = () => {
     return (
         <div className={styles.Plans}>
             {RETRIVE_PLANS.map((plan, index) => (

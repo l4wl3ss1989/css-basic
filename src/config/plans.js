@@ -41,16 +41,19 @@ const RETRIVE_PLANS = [
 const RETRIVE_PACKAGES_PLANS = [    
     {
         name: 'PLUS',
+        featured: true,
         title: 'The most popular choice of our customers.',
         desc: 'Benefit from increased storage and faster support to ensure that your mission-critical data and applications are always available!'
     },
     {
         name: 'FREE',
+        featured: false,
         title: 'An extremely solid start into our hosting world.',
         desc: 'Get started immediately at zero cost!'
     },
     {
         name: 'PREMIUM',
+        featured: false,
         title: 'All your enterprise needs. Instant support, guaranteed uptime.',
         desc: 'The best solution for small to large enterprises. Because hosting shouldn\'t be in the way!'
     }

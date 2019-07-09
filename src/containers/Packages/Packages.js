@@ -6,19 +6,23 @@ import styles from './Packages.module.scss';
 
 const Packages = () => {
     return (
-        <div className={styles.Packages}>
-            {RETRIVE_PACKAGES_PLANS.map((plan, index) => (
-                <React.Fragment key={index}>
-                    <PackagesPlan
-                        name={plan.name}
-                        title={plan.title}
-                        desc={plan.desc}
-                    />
-                    <div className={styles.ClearFix} />
-                </React.Fragment>
-            ))}
-            
-        </div>
+        <React.Fragment>
+            <div className={styles.Background}></div>
+            <div className={styles.Packages}>
+                {RETRIVE_PACKAGES_PLANS.map((plan, index) => (
+                    <React.Fragment key={index}>
+                        <PackagesPlan
+                            name={plan.name}
+                            title={plan.title}
+                            desc={plan.desc}
+                            featured={plan.featured}
+                        />
+                        <div className={styles.ClearFix} />
+                    </React.Fragment>
+                ))}
+                
+            </div>
+        </React.Fragment>
     );
 };
 
