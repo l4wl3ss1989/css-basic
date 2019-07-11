@@ -6,17 +6,17 @@
     vertical-align: top;
     .Feature__image {
         background: $color-red-ligth;
-        width: 128px;
-        height: 128px;
+        width: 8rem;
+        height: 8rem;
         border: 2px solid #424242;
         border-radius: 50%;
         margin: auto;
-        padding: 20px;
+        padding: 1.3rem;
     }
     .Feature__description {
         text-align: center;
         font-weight: bold;
         color: white;
-        font-size: 20px;
+        font-size: 1.3remx;
     }
 }

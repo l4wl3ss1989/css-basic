@@ -2,7 +2,7 @@
 
 .PackagesPlan {    
     width: 80%;
-    margin: 16px 0;
+    margin: 1rem 0;
     border: 4px solid $color-theme-dark;
     border-left: none;
     position: relative;
@@ -14,7 +14,7 @@
         text-decoration: none;
         color: inherit;
         display: block;
-        padding: 32px;
+        padding: 2rem;
         .PackagesPlan__title {
             color: black
         }
@@ -22,20 +22,20 @@
             position: absolute;
             top: 0;
             right: 0;
-            margin: 20px;
-            font-size: 12px;
+            margin: 1.3rem;
+            font-size: .8rem;
             color: white;
             background: $color-danger;
-            padding: 8px;
+            padding: .5rem;
 
         }
         .PackagesPlan__subtitle {
             color: #979797;
         }
         .PackagesPlan__info {
-            padding: 16px;
+            padding: 1rem;
             border: 1px solid $color-theme-dark;
-            font-size: 20px;
+            font-size: 1.3rem;
             color: $color-theme-dark;
             background: white;
         }
