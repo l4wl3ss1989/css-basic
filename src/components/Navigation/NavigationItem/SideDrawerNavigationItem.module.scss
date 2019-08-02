@@ -1,0 +1,45 @@
+@import '../../../sass/vars.scss';
+
+@mixin active-item {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+@mixin active-item-cta {
+    color: $color-red;
+    background: white;
+    border: none;
+}
+
+.NavigationItem {
+    margin: 1rem 0;
+    .NavigationItem__link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color-theme-dark;
+        font-weight: bold;        
+        padding: .2rem 0;
+        &:hover, &:active {
+            @include active-item;
+        } 
+    }
+
+    .NavigationItem__link_cta {
+        font-size: 1.5rem;
+        color: white;
+        background: $color-red;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        &:hover, &:active {
+            @include active-item-cta;
+        }
+    }
+
+    .NavigationItem__link.NavigationItem__link_active  {
+        @include active-item;
+    }
+
+    .NavigationItem__link_cta.NavigationItem__link_active {
+        @include active-item-cta;
+    }
+}

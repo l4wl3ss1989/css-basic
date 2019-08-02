@@ -10,10 +10,6 @@ const Plan = props => {
         cssClasses.push(styles.Plan_highlighted);
     }
 
-    const onPlanSelected = () => {
-        console.log(`${props.id} selected!`);
-    }
-
     return (
         <article className={cssClasses.join(' ')}
         >
@@ -32,7 +28,7 @@ const Plan = props => {
                 <Button
                     disabled={false}
                     btnType={null}
-                    clicked={() => onPlanSelected()}
+                    clicked={props.clicked}
                 >
                     CHOOSE PLAN
                 </Button>

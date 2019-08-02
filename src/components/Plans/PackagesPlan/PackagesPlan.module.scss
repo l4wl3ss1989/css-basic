@@ -10,6 +10,9 @@
         box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         border-color: $color-red;
     }
+    @media (min-width: 93rem) {
+        border-left: 4px solid $color-theme-dark;
+    }
     a{
         text-decoration: none;
         color: inherit;
@@ -54,6 +57,12 @@
     text-align: right;
     &:hover, &:active {
         border-left-color: $color-red;
+        @media (min-width: 93rem) {
+            border-right-color: $color-red;
+        }
+    }
+    @media (min-width: 93rem) {
+        border-right: 4px solid $color-theme-dark;
     }
 }
 

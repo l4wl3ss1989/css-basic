@@ -3,9 +3,16 @@ import { NavLink } from 'react-router-dom';
 
 import stylesHeader from './HeaderNavigationItem.module.scss';
 import stylesFooter from './FooterNavigationItem.module.scss';
+import stylesSideDrawer from './SideDrawerNavigationItem.module.scss';
 
 const NavigationItem = props => {
-    const styles = props.classRef === 'header' ? stylesHeader : stylesFooter;
+    let styles;
+    switch (props.classRef) {
+        case 'header': styles = stylesHeader; break;
+        case 'footer': styles = stylesFooter; break;
+        case 'sidedrawer': styles = stylesSideDrawer; break;
+        default: styles = stylesFooter; break;
+    }
     return (
         <li className={styles.NavigationItem}>
             <NavLink

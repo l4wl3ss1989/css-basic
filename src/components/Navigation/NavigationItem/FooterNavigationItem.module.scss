@@ -5,8 +5,7 @@
 }
 
 .NavigationItem {
-    display: inline-block;
-    margin: 0 1rem;
+    margin: 1rem 0;
     .NavigationItem__link {
         text-decoration: none;
         color: white;
@@ -14,8 +13,11 @@
             @include active-item;
         }      
     }
-
     .NavigationItem__link.NavigationItem__link_active  {
         @include active-item;
+    }
+    @media (min-width: 40rem) {
+        display: inline-block;
+        margin: 0 1rem;
     }
 }

@@ -1,13 +1,10 @@
 @import '../../../sass//vars.scss';
 
-.Feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+.Feature {    
     .Feature__image {
         background: $color-red-ligth;
-        width: 8rem;
-        height: 8rem;
+        width: 128px;
+        height: 128px;
         border: 2px solid #424242;
         border-radius: 50%;
         margin: auto;
@@ -18,5 +15,11 @@
         font-weight: bold;
         color: white;
         font-size: 1.3remx;
+    }
+    @media (min-width: 40rem) {
+        vertical-align: top;    
+        display: inline-block;
+        width: 30%;
+        max-width: 25rem;
     }
 }

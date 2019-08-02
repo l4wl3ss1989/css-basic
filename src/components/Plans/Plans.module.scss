@@ -1,5 +1,10 @@
 .Plans {
-    width: 80%;
-    margin: auto;
-    text-align: center;
+    @media (min-width: 40rem) {   
+        margin: auto;
+        text-align: center;
+    }
+
+    @media (min-width: 60rem) {
+        width: 80%;        
+    }
 }

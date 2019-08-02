@@ -4,9 +4,13 @@ import styles from './Home.module.scss'
 import Plans from '../../components/Plans/Plans';
 import Features from '../../components/Features/Features';
 
+//TEMP
+import Modal from '../../components/UI/Modal/Modal';
+
 const Home = () => {
+
     return (
-        <React.Fragment>
+        <React.Fragment>                
             <section className={styles.ProductOvervew}>
                 <h1>Get the freedom you deserve.</h1>
             </section>
@@ -20,6 +24,6 @@ const Home = () => {
             </section>
         </React.Fragment>
     );
-};
+}
 
 export default Home;
